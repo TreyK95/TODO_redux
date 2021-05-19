@@ -15,7 +15,17 @@ const TodoForm = (props) => {
     setTodo("");
   };
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        width: "200px",
+        margin: "0 auto",
+        height: "200px",
+        overflowX: "auto",
+        overflowY: "auto",
+      }}
+    >
       <h1>Add Todo</h1>
       <form onSubmit={handleSubmit}>
         <input value={todo} onChange={(e) => setTodo(e.target.value)} />
